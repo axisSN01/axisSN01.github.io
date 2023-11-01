@@ -5,9 +5,9 @@
     <style>
         .iframe-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio (puedes ajustar este valor) */
-            padding-top: 30px;
+            width: 100%; /* Define el ancho del contenedor */
             height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (puedes ajustar este valor) */
             overflow: hidden;
         }
 
@@ -15,13 +15,14 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100%; /* Define el ancho del iframe al 100% del contenedor */
+            height: 100%; /* Define el alto del iframe al 100% del contenedor */
         }
     </style>
 </head>
 <body>
     <div class="iframe-container">
-<iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiM2I5MzI5NjctYzY3OC00YTdhLThkNDMtZmIzYzljZWQzOTljIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>    </div>
+        <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiM2I5MzI5NjctYzY3OC00YTdhLThkNDMtZmIzYzljZWQzOTcjIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
 </body>
 </html>
