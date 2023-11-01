@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        .iframe-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio (puedes ajustar este valor) */
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
+  .iframe-container {
+    position: relative;
+    width: 100%; /* Cambiamos el padding-bottom a width 100% */
+    max-width: 100%; /* Añadimos un max-width para evitar desbordamiento horizontal */
+    height: 0;
+    overflow: hidden;
+  }
 
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Establecemos el height al 100% para que el iframe no supere el alto */
+  }
     </style>
 </head>
 <body>
