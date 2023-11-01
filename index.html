@@ -1,1 +1,28 @@
-<iframe title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiM2I5MzI5NjctYzY3OC00YTdhLThkNDMtZmIzYzljZWQzOTljIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .iframe-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (puedes ajustar este valor) */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiM2I5MzI5NjctYzY3OC00YTdhLThkNDMtZmIzYzljZWQzOTcjIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+</body>
+</html>
