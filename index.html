@@ -41,7 +41,7 @@
 <body>
     <div class="iframe-container">
         <!-- <iframe title="demo" src="https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada" frameborder="0" allowFullScreen="true"></iframe> -->
-        <iframe title="demo" src="" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="" src="" frameborder="0" allowFullScreen="true"></iframe>
     <script>
 var iframe = document.querySelector('.iframe-container iframe'); 
 
@@ -53,8 +53,10 @@ $(document).ready(function(e) {
       var desktopLink = 'https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada';
     
         if (isMobile) {
+            iframe.title = "demo-Mobile";
             iframe.src = mobileLink;
         } else {
+            iframe.title = "demo";
             iframe.src = desktopLink;
         }
     }
