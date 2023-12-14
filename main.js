@@ -1,7 +1,6 @@
-var iframe = document.querySelector('#iframe'); 
+var iframe = document.querySelector('.iframe-container iframe'); 
 
 $(document).ready(function(e) {
-    var iframe = document.querySelector('#iframe');
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     // var mobileLink = 'https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada';
