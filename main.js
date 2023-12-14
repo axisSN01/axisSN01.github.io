@@ -1,4 +1,6 @@
-function setIframeSrc() {
+var iframe = document.querySelector('#iframe'); 
+
+$(document).ready(function(e) {
     var iframe = document.querySelector('#iframe');
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -12,10 +14,4 @@ function setIframeSrc() {
         iframe.src = desktopLink;
     }
 }
-
-// Call the function when the document is ready
-$(document).ready(function () {
-    setIframeSrc();
-});
-
 
