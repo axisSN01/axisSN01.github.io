@@ -17,7 +17,7 @@
     
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <style>
-        
+
         .embeddedLandingRootContentLogoVisible { height: 100% }
         .logoBarWrapper { display: none }
         
@@ -38,10 +38,10 @@ $(document).ready(function(e) {
       var desktopLink = 'https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9';
     
         if (isMobile) {
-            // div_container.position = "absolute";
-            // div_container.style.top = "0";
-            // div_container.style.left = "0";
-            // div_container.style.width = "100vw";
+            div_container.style.position = "absolute";
+            div_container.style.top = "0";
+            div_container.style.left = "0";
+            div_container.style.width = "100vw";
             div_container.style.height = "120vh";            
 
             iframe.title = "demo-Mobile";
@@ -49,10 +49,10 @@ $(document).ready(function(e) {
             iframe.style.height = "120vh";
             iframe.src = mobileLink;
         } else {
-            // div_container.position = "absolute";
-            // div_container.style.top = "0";
-            // div_container.style.left = "0";
-            // div_container.style.width = "100vw";
+            div_container.style.position = "absolute";
+            div_container.style.top = "0";
+            div_container.style.left = "0";
+            div_container.style.width = "100vw";
             div_container.style.height = "200vh"; 
 
             iframe.title = "demo";
