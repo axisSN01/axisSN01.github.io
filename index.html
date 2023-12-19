@@ -17,14 +17,7 @@
     
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <style>
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 120vh;            
-        }
-
+        
         .embeddedLandingRootContentLogoVisible { height: 100% }
         .logoBarWrapper { display: none }
         
@@ -32,26 +25,40 @@
 </head>
 <body>
     <div class="iframe-container">
-        <!-- <iframe title="demo" src="https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada" frameborder="0" allowFullScreen="true"></iframe> -->
         <iframe title="" src="" frameborder="0" allowFullScreen="true"></iframe>
     <script>
-var iframe = document.querySelector('.iframe-container iframe'); 
+
+var iframe = document.querySelector('.iframe-container iframe');    
+var div_container = document.querySelector('.iframe-container');
 
 $(document).ready(function(e) {
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     
-        // var mobileLink = 'https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada';
       var mobileLink = 'https://app.powerbi.com/view?r=eyJrIjoiNTBiZDViMTQtMjBmYi00NTk2LWFmODYtZWIxMGQ2YTBlNjRlIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9&pageName=ReportSection5fc548ad805310641ada';
       var desktopLink = 'https://app.powerbi.com/view?r=eyJrIjoiYmNiZDViOTUtMzRhZC00ZTNlLTgwNjMtY2QyYjZmMDI5YmVhIiwidCI6ImVhYjIyMDQ5LTY0YWUtNDcwOC04YmFlLWRhOTA0NTkwZThkZSJ9';
     
         if (isMobile) {
+            // div_container.position = "absolute";
+            // div_container.style.top = "0";
+            // div_container.style.left = "0";
+            // div_container.style.width = "100vw";
+            div_container.style.height = "120vh";            
+
             iframe.title = "demo-Mobile";
+            iframe.style.width = "100vw";            
+            iframe.style.height = "120vh";
             iframe.src = mobileLink;
-            iframe.height: 120vh;
         } else {
+            // div_container.position = "absolute";
+            // div_container.style.top = "0";
+            // div_container.style.left = "0";
+            // div_container.style.width = "100vw";
+            div_container.style.height = "200vh"; 
+
             iframe.title = "demo";
+            iframe.style.width = "100vw";             
+            iframe.style.height = "200vh";
             iframe.src = desktopLink;
-            iframe.height: 200vh;
         }
     }
     )
